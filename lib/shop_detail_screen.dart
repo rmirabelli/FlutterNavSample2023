@@ -10,6 +10,17 @@ class ShopDetailScreen extends StatelessWidget {
       appBar: AppBar(title: Text(_detailInfo)),
       body: Column(
         children: [
+          Hero(
+            tag: 'tag_avatar_$_detailInfo',
+            child: Container(
+              height: 300,
+              width: 300,
+              decoration: ShapeDecoration(
+                color: Colors.yellow,
+                shape: CircleBorder(),
+              ),
+            ),
+          ),
           Text(_detailInfo),
         ],
       ),

@@ -7,8 +7,11 @@ class ShopListTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      leading: CircleAvatar(
-        backgroundColor: Colors.green,
+      leading: Hero(
+        tag: 'tag_avatar_$_title',
+        child: CircleAvatar(
+          backgroundColor: Colors.green,
+        ),
       ),
       title: Text(_title),
       onTap: _onTap,
